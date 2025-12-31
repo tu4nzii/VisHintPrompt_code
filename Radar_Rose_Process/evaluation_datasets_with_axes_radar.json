@@ -1,0 +1,143 @@
+[
+  {
+    "chart_id": "radar_001",
+    "chart_type": "radar",
+    "labels": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F"
+    ],
+    "data_points": {
+      "LMIEXG": {
+        "F": 78.0,
+        "D": 30.0,
+        "E": 36.0,
+        "A": 64.0,
+        "C": 67.0,
+        "B": 84.0
+      },
+      "KBGCVO": {
+        "C": 54.0,
+        "A": 61.0,
+        "B": 26.0,
+        "F": 46.0,
+        "D": 34.0,
+        "E": 92.0
+      },
+      "AZC": {
+        "D": 74.0,
+        "F": 75.0,
+        "A": 18.0,
+        "B": 90.0,
+        "E": 73.0,
+        "C": 11.0
+      },
+      "OAAKCP": {
+        "C": 52.0,
+        "F": 12.0,
+        "E": 56.0,
+        "B": 32.0,
+        "D": 44.0,
+        "A": 50.0
+      }
+    },
+    "theta_ticks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F"
+    ],
+    "theta_angles": [
+      0.0,
+      60.0,
+      120.0,
+      180.0,
+      240.0,
+      300.0
+    ],
+    "r_ticks": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      60,
+      70,
+      80,
+      90,
+      100.0
+    ],
+    "r_pixels": [
+      46,
+      92,
+      138,
+      184,
+      230
+    ],
+    "center": [
+      307,
+      303
+    ],
+    "image_paths": {
+      "no_grid": "./data\\circle\\radar\\radar_001.png",
+      "with_grid": "./data\\out\\circle\\radar\\radar_001+encode.jpg"
+    },
+    "series_color": {
+      "LMIEXG": "#dbdb8d",
+      "KBGCVO": "#ff7f0e",
+      "AZC": "#aec7e8",
+      "OAAKCP": "#d62728"
+    },
+    "num_entities": 4,
+    "fill_enabled": true,
+    "num_vars": 6,
+    "err_center": 1.0,
+    "pred_coords": [
+      308,
+      303
+    ],
+    "argument": {
+      "a": 2.283333333333333,
+      "b": -0.3333333333333144
+    },
+    "data": {
+      "LMIEXG,F": 78.0,
+      "LMIEXG,D": 30.0,
+      "LMIEXG,E": 36.0,
+      "LMIEXG,A": 64.0,
+      "LMIEXG,C": 67.0,
+      "LMIEXG,B": 84.0,
+      "KBGCVO,C": 54.0,
+      "KBGCVO,A": 61.0,
+      "KBGCVO,B": 26.0,
+      "KBGCVO,F": 46.0,
+      "KBGCVO,D": 34.0,
+      "KBGCVO,E": 92.0,
+      "AZC,D": 74.0,
+      "AZC,F": 75.0,
+      "AZC,A": 18.0,
+      "AZC,B": 90.0,
+      "AZC,E": 73.0,
+      "AZC,C": 11.0,
+      "OAAKCP,C": 52.0,
+      "OAAKCP,F": 12.0,
+      "OAAKCP,E": 56.0,
+      "OAAKCP,B": 32.0,
+      "OAAKCP,D": 44.0,
+      "OAAKCP,A": 50.0
+    },
+    "axis_labels": {
+      "0": "A",
+      "60": "B",
+      "120": "C",
+      "180": "D",
+      "240": "E",
+      "300": "F"
+    }
+  }
+]

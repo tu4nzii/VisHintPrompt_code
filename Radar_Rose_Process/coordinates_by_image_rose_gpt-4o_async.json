@@ -1,0 +1,196 @@
+{
+    "rose_000": {
+        "chart_type": "rose",
+        "data": {
+            "LSP": {
+                "origin": 0.78,
+                "no_grid": 0.8,
+                "with_grid": 0.75,
+                "feedback": [
+                    0.75,
+                    0.875,
+                    1.0,
+                    0.875
+                ],
+                "amplifier_feedback_ticks": [
+                    0.94,
+                    0.88,
+                    0.88
+                ],
+                "amplifier_grid_ticks": [
+                    0.81,
+                    0.88,
+                    0.86
+                ]
+            },
+            "WZA": {
+                "origin": 0.59,
+                "no_grid": 0.8,
+                "with_grid": 0.9,
+                "feedback": [
+                    0.9,
+                    0.75,
+                    0.625,
+                    0.5
+                ],
+                "amplifier_feedback_ticks": [
+                    0.56,
+                    0.62,
+                    0.62
+                ],
+                "amplifier_grid_ticks": [
+                    0.81,
+                    0.81,
+                    0.75
+                ]
+            },
+            "QIO": {
+                "origin": 0.5,
+                "no_grid": 0.7,
+                "with_grid": 0.625,
+                "feedback": [
+                    0.625,
+                    0.75,
+                    0.875,
+                    0.875
+                ],
+                "amplifier_feedback_ticks": [
+                    0.88,
+                    0.94,
+                    0.94
+                ],
+                "amplifier_grid_ticks": [
+                    0.52,
+                    0.62,
+                    0.56
+                ]
+            },
+            "QH": {
+                "origin": 0.93,
+                "no_grid": 0.8,
+                "with_grid": 0.875,
+                "feedback": [
+                    0.875,
+                    0.75,
+                    0.875,
+                    0.625
+                ],
+                "amplifier_feedback_ticks": [
+                    0.69,
+                    0.75,
+                    0.81
+                ],
+                "amplifier_grid_ticks": [
+                    0.94,
+                    0.94,
+                    0.94
+                ]
+            },
+            "RTSU": {
+                "origin": 0.68,
+                "no_grid": 0.8,
+                "with_grid": 0.875,
+                "feedback": [
+                    0.875,
+                    0.75,
+                    0.875,
+                    0.75
+                ],
+                "amplifier_feedback_ticks": [
+                    0.88,
+                    0.75,
+                    0.75
+                ],
+                "amplifier_grid_ticks": [
+                    0.75,
+                    0.75,
+                    0.75
+                ]
+            },
+            "FW": {
+                "origin": 0.86,
+                "no_grid": 0.8,
+                "with_grid": 0.25,
+                "feedback": [
+                    0.25,
+                    0.375,
+                    0.5,
+                    0.65
+                ],
+                "amplifier_feedback_ticks": [
+                    0.75,
+                    0.81,
+                    0.75
+                ],
+                "amplifier_grid_ticks": [
+                    0.31,
+                    0.38,
+                    0.44
+                ]
+            },
+            "QSR": {
+                "origin": 0.58,
+                "no_grid": 0.5,
+                "with_grid": 0.375,
+                "feedback": [
+                    0.375,
+                    0.25,
+                    0.5,
+                    0.375
+                ],
+                "amplifier_feedback_ticks": [
+                    0.44,
+                    0.5,
+                    0.56
+                ],
+                "amplifier_grid_ticks": [
+                    0.44,
+                    0.5,
+                    0.56
+                ]
+            },
+            "UCLS": {
+                "origin": 0.53,
+                "no_grid": 0.5,
+                "with_grid": 0.25,
+                "feedback": [
+                    0.25,
+                    0.375,
+                    0.25,
+                    0.375
+                ],
+                "amplifier_feedback_ticks": [
+                    0.44,
+                    0.5,
+                    0.56
+                ],
+                "amplifier_grid_ticks": [
+                    0.31,
+                    0.38,
+                    0.44
+                ]
+            },
+            "PL": {
+                "origin": 0.8,
+                "no_grid": 0.7,
+                "with_grid": 0.625,
+                "feedback": [
+                    0.625,
+                    0.75,
+                    0.8,
+                    0.9
+                ],
+                "amplifier_feedback_ticks": [
+                    0.94,
+                    0.94,
+                    0.94
+                ],
+                "amplifier_grid_ticks": [
+                    0.69,
+                    0.75,
+                    0.75
+                ]
+            }
+        }
+    }
+}

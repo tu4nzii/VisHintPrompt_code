@@ -1,0 +1,505 @@
+{
+    "radar_001": {
+        "chart_type": "radar",
+        "data": {
+            "LMIEXG,F": {
+                "origin": 78.0,
+                "no_grid": 40,
+                "with_grid": 40,
+                "feedback": [
+                    40,
+                    25,
+                    50,
+                    30
+                ],
+                "amplifier_feedback_ticks": [
+                    18
+                ],
+                "amplifier_grid_ticks": [
+                    75,
+                    70
+                ]
+            },
+            "LMIEXG,D": {
+                "origin": 30.0,
+                "no_grid": 40,
+                "with_grid": 60,
+                "feedback": [
+                    60,
+                    50,
+                    40,
+                    50
+                ],
+                "amplifier_feedback_ticks": [
+                    35,
+                    30,
+                    35
+                ],
+                "amplifier_grid_ticks": [
+                    32
+                ]
+            },
+            "LMIEXG,E": {
+                "origin": 36.0,
+                "no_grid": 40,
+                "with_grid": 60,
+                "feedback": [
+                    60,
+                    40,
+                    50,
+                    30
+                ],
+                "amplifier_feedback_ticks": [
+                    35,
+                    37,
+                    35
+                ],
+                "amplifier_grid_ticks": [
+                    35,
+                    35,
+                    30
+                ]
+            },
+            "LMIEXG,A": {
+                "origin": 64.0,
+                "no_grid": 50,
+                "with_grid": 30,
+                "feedback": [
+                    30,
+                    35,
+                    45,
+                    30
+                ],
+                "amplifier_feedback_ticks": [
+                    65,
+                    65,
+                    65
+                ],
+                "amplifier_grid_ticks": [
+                    65,
+                    66,
+                    66
+                ]
+            },
+            "LMIEXG,C": {
+                "origin": 67.0,
+                "no_grid": 40,
+                "with_grid": 40,
+                "feedback": [
+                    40,
+                    50,
+                    30,
+                    40
+                ],
+                "amplifier_feedback_ticks": [
+                    65,
+                    65,
+                    70
+                ],
+                "amplifier_grid_ticks": [
+                    65,
+                    70,
+                    70
+                ]
+            },
+            "LMIEXG,B": {
+                "origin": 84.0,
+                "no_grid": 80,
+                "with_grid": 45,
+                "feedback": [
+                    45,
+                    50,
+                    40,
+                    50
+                ],
+                "amplifier_feedback_ticks": [
+                    80,
+                    85
+                ],
+                "amplifier_grid_ticks": [
+                    85,
+                    85,
+                    85
+                ]
+            },
+            "KBGCVO,C": {
+                "origin": 54.0,
+                "no_grid": 20,
+                "with_grid": 40,
+                "feedback": [
+                    40,
+                    60,
+                    40,
+                    60
+                ],
+                "amplifier_feedback_ticks": [
+                    60,
+                    55,
+                    55
+                ],
+                "amplifier_grid_ticks": [
+                    45,
+                    42,
+                    50
+                ]
+            },
+            "KBGCVO,A": {
+                "origin": 61.0,
+                "no_grid": 40,
+                "with_grid": 50,
+                "feedback": [
+                    50,
+                    70,
+                    80,
+                    70
+                ],
+                "amplifier_feedback_ticks": [
+                    70,
+                    70,
+                    70
+                ],
+                "amplifier_grid_ticks": [
+                    60,
+                    60,
+                    60
+                ]
+            },
+            "KBGCVO,B": {
+                "origin": 26.0,
+                "no_grid": 80,
+                "with_grid": 50,
+                "feedback": [
+                    50,
+                    60,
+                    70,
+                    85
+                ],
+                "amplifier_feedback_ticks": [
+                    87.5,
+                    87.5,
+                    85
+                ],
+                "amplifier_grid_ticks": [
+                    50,
+                    50,
+                    50
+                ]
+            },
+            "KBGCVO,F": {
+                "origin": 46.0,
+                "no_grid": 20,
+                "with_grid": 60,
+                "feedback": [
+                    60,
+                    70,
+                    60,
+                    70
+                ],
+                "amplifier_feedback_ticks": [
+                    73,
+                    78,
+                    80
+                ],
+                "amplifier_grid_ticks": [
+                    50,
+                    50,
+                    50
+                ]
+            },
+            "KBGCVO,D": {
+                "origin": 34.0,
+                "no_grid": 35,
+                "with_grid": 40,
+                "feedback": [
+                    40,
+                    50,
+                    70,
+                    50
+                ],
+                "amplifier_feedback_ticks": [
+                    37,
+                    35,
+                    35
+                ],
+                "amplifier_grid_ticks": [
+                    35,
+                    35,
+                    35
+                ]
+            },
+            "KBGCVO,E": {
+                "origin": 92.0,
+                "no_grid": 20,
+                "with_grid": 80,
+                "feedback": [
+                    80,
+                    70,
+                    80,
+                    70
+                ],
+                "amplifier_feedback_ticks": [
+                    80,
+                    95,
+                    92.5
+                ],
+                "amplifier_grid_ticks": [
+                    95,
+                    95,
+                    95
+                ]
+            },
+            "AZC,D": {
+                "origin": 74.0,
+                "no_grid": 30,
+                "with_grid": 40,
+                "feedback": [
+                    40,
+                    50,
+                    40,
+                    60
+                ],
+                "amplifier_feedback_ticks": [
+                    70,
+                    70,
+                    70
+                ],
+                "amplifier_grid_ticks": [
+                    55,
+                    50,
+                    55
+                ]
+            },
+            "AZC,F": {
+                "origin": 75.0,
+                "no_grid": 45,
+                "with_grid": 50,
+                "feedback": [
+                    50,
+                    30,
+                    45,
+                    30
+                ],
+                "amplifier_feedback_ticks": [
+                    40,
+                    60,
+                    75
+                ],
+                "amplifier_grid_ticks": [
+                    75,
+                    75,
+                    75
+                ]
+            },
+            "AZC,A": {
+                "origin": 18.0,
+                "no_grid": 30,
+                "with_grid": 60,
+                "feedback": [
+                    60,
+                    50,
+                    30,
+                    10
+                ],
+                "amplifier_feedback_ticks": [
+                    22,
+                    22,
+                    19
+                ],
+                "amplifier_grid_ticks": [
+                    25,
+                    20,
+                    20
+                ]
+            },
+            "AZC,B": {
+                "origin": 90.0,
+                "no_grid": 80,
+                "with_grid": 90,
+                "feedback": [
+                    90,
+                    70,
+                    90,
+                    80
+                ],
+                "amplifier_feedback_ticks": [
+                    92,
+                    90,
+                    90
+                ],
+                "amplifier_grid_ticks": [
+                    90,
+                    90,
+                    90
+                ]
+            },
+            "AZC,E": {
+                "origin": 73.0,
+                "no_grid": 20,
+                "with_grid": 60,
+                "feedback": [
+                    60,
+                    80,
+                    70,
+                    80
+                ],
+                "amplifier_feedback_ticks": [
+                    80,
+                    80,
+                    80
+                ],
+                "amplifier_grid_ticks": [
+                    70,
+                    67.5,
+                    67.5
+                ]
+            },
+            "AZC,C": {
+                "origin": 11.0,
+                "no_grid": 65,
+                "with_grid": 30,
+                "feedback": [
+                    30,
+                    40,
+                    60,
+                    45
+                ],
+                "amplifier_feedback_ticks": [
+                    10,
+                    15,
+                    10
+                ],
+                "amplifier_grid_ticks": [
+                    37,
+                    10,
+                    15
+                ]
+            },
+            "OAAKCP,C": {
+                "origin": 52.0,
+                "no_grid": 40,
+                "with_grid": 30,
+                "feedback": [
+                    30,
+                    40,
+                    35,
+                    40
+                ],
+                "amplifier_feedback_ticks": [
+                    45,
+                    50,
+                    50
+                ],
+                "amplifier_grid_ticks": [
+                    55,
+                    50,
+                    50
+                ]
+            },
+            "OAAKCP,F": {
+                "origin": 12.0,
+                "no_grid": 30,
+                "with_grid": 20,
+                "feedback": [
+                    20,
+                    40,
+                    30,
+                    40
+                ],
+                "amplifier_feedback_ticks": [
+                    45,
+                    45,
+                    47
+                ],
+                "amplifier_grid_ticks": [
+                    18,
+                    15,
+                    15
+                ]
+            },
+            "OAAKCP,E": {
+                "origin": 56.0,
+                "no_grid": 35,
+                "with_grid": 50,
+                "feedback": [
+                    50,
+                    45,
+                    55,
+                    45
+                ],
+                "amplifier_feedback_ticks": [
+                    55,
+                    60,
+                    60
+                ],
+                "amplifier_grid_ticks": [
+                    55,
+                    55,
+                    56
+                ]
+            },
+            "OAAKCP,B": {
+                "origin": 32.0,
+                "no_grid": 40,
+                "with_grid": 30,
+                "feedback": [
+                    30,
+                    50,
+                    30,
+                    40
+                ],
+                "amplifier_feedback_ticks": [
+                    35,
+                    35,
+                    35
+                ],
+                "amplifier_grid_ticks": [
+                    30,
+                    30,
+                    30
+                ]
+            },
+            "OAAKCP,D": {
+                "origin": 44.0,
+                "no_grid": 40,
+                "with_grid": 40,
+                "feedback": [
+                    40,
+                    30,
+                    40,
+                    50
+                ],
+                "amplifier_feedback_ticks": [
+                    50,
+                    50,
+                    45
+                ],
+                "amplifier_grid_ticks": [
+                    45,
+                    45,
+                    45
+                ]
+            },
+            "OAAKCP,A": {
+                "origin": 50.0,
+                "no_grid": 45,
+                "with_grid": 50,
+                "feedback": [
+                    50,
+                    25,
+                    30,
+                    40
+                ],
+                "amplifier_feedback_ticks": [
+                    50,
+                    50,
+                    50
+                ],
+                "amplifier_grid_ticks": [
+                    50,
+                    50,
+                    50
+                ]
+            }
+        }
+    }
+}
