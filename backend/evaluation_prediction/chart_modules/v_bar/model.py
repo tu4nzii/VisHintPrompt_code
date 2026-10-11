@@ -1,0 +1,115 @@
+"""Model calls for vertical bar charts."""
+
+from __future__ import annotations
+
+import asyncio
+from pathlib import Path
+from typing import Any
+
+import aiohttp
+
+from gemini_calls import FAILURE_TEXT, chat_with_gemini
+
+from ...common.chart_io import image_to_data_url
+from ...common.json_utils import parse_model_json, unwrap_openai_content
+from ...common.model_config import get_chat_completion_urls, get_model_name
+
+from .parser import extract_coords
+
+
+def extract_readable_flag(payload: Any) -> bool:
+    if isinstance(payload, dict) and "readable" in payload:
+        value = payload.get("readable")
+        if isinstance(value, bool):
+            return value
+        if isinstance(value, str):
+            return value.strip().lower() in {"true", "yes", "1", "readable"}
+        return bool(value)
+    return True
+
+
+class VBarModelClient:
+    def __init__(
+        self,
+        legacy_urls: list[str] | None = None,
+        *,
+        max_retries: int = 3,
+        timeout: aiohttp.ClientTimeout | None = None,
+    ) -> None:
+        self.urls = get_chat_completion_urls(legacy_urls)
+        self.model_name = get_model_name()
+        self.max_retries = max_retries
+        self.timeout = timeout or aiohttp.ClientTimeout(total=300, connect=30, sock_connect=30, sock_read=240)
+        self._session: aiohttp.ClientSession | None = None
+        self._index = 0
+        self.last_readable = True
+
+    async def __aenter__(self) -> "VBarModelClient":
+        await self._ensure_session()
+        return self
+
+    async def __aexit__(self, exc_type, exc, tb) -> None:
+        await self.close()
+
+    async def close(self) -> None:
+        if self._session and not self._session.closed:
+            await self._session.close()
+
+    async def _ensure_session(self) -> aiohttp.ClientSession:
+        if self._session is None or self._session.closed:
+            self._session = aiohttp.ClientSession(timeout=self.timeout)
+        return self._session
+
+    def _next_url(self) -> str:
+        url = self.urls[self._index]
+        self._index = (self._index + 1) % len(self.urls)
+        return url
+
+    def _payload(self, prompt: str, image_path: Path) -> dict[str, Any]:
+        return {
+            "model": self.model_name,
+            "messages": [
+                {
+                    "role": "user",
+                    "content": [
+                        {"type": "text", "text": prompt},
+                        {"type": "image_url", "image_url": {"url": image_to_data_url(image_path)}},
+                    ],
+                }
+            ],
+            "max_tokens": 512,
+        }
+
+    async def call_text(self, prompt: str, image_path: Path, label: str) -> str | None:
+        url = self._next_url()
+        print(f"[v_bar model] {label} -> {url}")
+        request_urls = [url] + [item for item in self.urls if item != url]
+        content = await chat_with_gemini(
+            self._payload(prompt, image_path)["messages"],
+            model=self.model_name,
+            max_tokens=512,
+            urls=request_urls,
+            timeout=self.timeout,
+            max_retries=self.max_retries,
+        )
+        return None if content == FAILURE_TEXT else content
+
+    async def predict_coords(self, prompt: str, image_path: Path, point_name: str) -> tuple[Any, Any]:
+        self.last_readable = True
+        content = await self.call_text(prompt, image_path, point_name)
+        if not content:
+            self.last_readable = False
+            return ("", -1)
+        parsed = parse_model_json(content)
+        self.last_readable = extract_readable_flag(parsed)
+        return extract_coords(parsed, point_name)
+
+    async def check_exists(self, prompt: str, image_path: Path) -> bool:
+        content = await self.call_text(prompt, image_path, "exists")
+        if not content:
+            return False
+        parsed = parse_model_json(content)
+        if isinstance(parsed, dict) and "exists" in parsed:
+            return bool(parsed["exists"])
+        lowered = content.strip().lower()
+        return "yes" in lowered and "no" not in lowered

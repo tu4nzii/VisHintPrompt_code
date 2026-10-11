@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Project specific
+test_output/
+*.log
+.venv/
+venv/
+model_secrets.local.json
+backend/evaluation_prediction/common/model_secrets.local.json
+recognized_text.json
+.vscode/settings.json
+**/.vscode/settings.json
+runtime_logs/
+data/output/
+sample_outputs/
+
+# Frontend build/cache
+frontend/chart-demo-ui/dist/
+frontend/chart-demo-ui/node_modules/
+
+# Backend runtime output
+backend/data/cache/
+backend/data/logs/
+backend/data/upload/
+backend/data/processed/
+backend/data/results/
+backend/data/output/
+backend/evaluation/results/
+backend/evaluation/tmp/
+backend/evaluation/reports/*.json
+backend/evaluation/reports/*.html
+backend/evaluation/reports/*.csv
+backend/evaluation/recheck_outputs/
+backend/evaluation_prediction/results/
+backend/**/__pycache__/
+
+# Experiment/evaluation artifacts
+experiment_gt_dataset/
+gt_full_object_results_package/
+gt_runs/
+backend/evaluation/manual_line_detection_*/
+backend/data/polar/llm_errors/
+review/polar_chart_type_errors_*/
